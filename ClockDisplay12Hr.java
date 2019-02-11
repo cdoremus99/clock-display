@@ -1,4 +1,3 @@
-
 /**
  * The ClockDisplay class implements a digital clock display for a
  * European-style 24 hour clock. The clock shows hours and minutes. The
@@ -22,9 +21,9 @@ public class ClockDisplay12Hr
      * Constructor for ClockDisplay objects. This constructor
      * creates a new clock set at 00:00.
      */
-    public ClockDisplay()
+    public ClockDisplay12Hr()
     {
-        hours = new NumberDisplay(24);
+        hours = new NumberDisplay(11);
         minutes = new NumberDisplay(60);
         updateDisplay();
     }
@@ -34,9 +33,9 @@ public class ClockDisplay12Hr
      * creates a new clock set at the time specified by the
      * parameters.
      */
-    public ClockDisplay(int hour, int minute)
+    public ClockDisplay12Hr(int hour, int minute)
     {
-        hours = new NumberDisplay(24);
+        hours = new NumberDisplay(11);
         minutes = new NumberDisplay(60);
         setTime(hour, minute);
     }
